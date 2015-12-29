@@ -1,0 +1,84 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.nayidisha</groupId>
+  <artifactId>slowglow</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  
+  
+  <name>slowglow</name>
+  <url>http://maven.apache.org</url>
+  
+  <modules>
+  	<module>slowglow-core</module>
+  </modules>
+    
+  <properties>
+  	   <java.version>1.8</java.version>
+  
+	   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	   <slf4j.version>1.7.5</slf4j.version>
+	   <log4j.version>1.2.17</log4j.version>
+	   <!-- <spring.version>4.0.3.RELEASE</spring.version>  boot managed -->
+	   <rabbitmq.version>3.2.3</rabbitmq.version>
+	   <felix.bundle.plugin.version>2.4.0</felix.bundle.plugin.version>
+	   <felix.version>4.2.1</felix.version>
+	   <pax.exam.version>3.4.0</pax.exam.version>
+	   <pax.url.version>1.6.0</pax.url.version>
+	   <axon.version>2.4.3</axon.version>
+	   <jgroups.version>3.1.0.Final</jgroups.version>
+	   <lombok.version>1.16.6</lombok.version>
+	   <javax.inject.version>1</javax.inject.version>
+	   <jasypt.version>1.9.2</jasypt.version>	
+	   <commons.lang3.version>3.2.1</commons.lang3.version>
+	   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>  
+  </properties>
+
+  <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.3.1.RELEASE</version>
+  </parent>
+    
+  <dependencies>
+	    <dependency>
+	      <groupId>junit</groupId>
+	      <artifactId>junit</artifactId>
+	      <version>4.11</version>
+	      <scope>test</scope>
+	    </dependency>
+
+		<!-- Nothing webby yet..   		
+		<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency> -->
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId> 
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId> 
+            <artifactId>spring-boot-starter-integration</artifactId>
+        </dependency>
+
+        <!-- tag::tests[] -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>		
+                  
+  </dependencies>
+	
+</project>

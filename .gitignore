@@ -1,0 +1,11 @@
+.classpath
+.project
+.springBeans
+.settings
+target
+*.war
+*.class
+logs
+mnt
+.DS_Store
+*.log
